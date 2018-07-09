@@ -4,12 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Siswa extends Model
+class Jenjang extends Model
 {
-    protected $table = 'data_siswa';
+    protected $table = 'data_jenjang_pendidikan';
     public $timestamps = false;
     public function prodi()
     {
-      return $this->belongsTo('App\Prodi','jurusan_id','id');
+      return $this->hasMany('App\Prodi');
     }
 }

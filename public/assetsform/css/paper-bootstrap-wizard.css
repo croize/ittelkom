@@ -1315,22 +1315,22 @@ input[type="button"]:focus {
   background-color: #F3BB45;
 }
 .wizard-card[data-color="red"] .picture:hover {
-  border-color: #EB5E28;
+  border-color: red;
 }
 .wizard-card[data-color="red"] .nav-pills > li.active > a:after {
-  background-color: #EB5E28;
+  background-color: red;
 }
 .wizard-card[data-color="red"] .nav-pills > li.active > a {
-  color: #EB5E28;
+  color: red;
 }
 .wizard-card[data-color="red"] .nav-pills .icon-circle.checked {
-  border-color: #EB5E28;
+  border-color: red;
 }
 .wizard-card[data-color="red"] .choice.active .card-checkboxes {
-  color: #EB5E28;
+  color: red;
 }
 .wizard-card[data-color="red"] .wizard-navigation .progress-bar {
-  background-color: #EB5E28;
+  background-color: red;
 }
 .wizard-card .picture input[type="file"] {
   cursor: pointer;

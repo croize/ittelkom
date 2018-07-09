@@ -13,12 +13,12 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{url('assets/images/logo.png')}}">
-    <title>Ela - Bootstrap Admin Dashboard Template</title>
+    <title>Dashboard Pendidikan Mobster</title>
     <!-- Bootstrap Core CSS -->
-    <link href="{{('assets/css/lib/bootstrap/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url('assets/css/lib/bootstrap/bootstrap.min.css')}}" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="{{('assets/css/helper.css')}}" rel="stylesheet">
-    <link href="{{('assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{url('assets/css/helper.css')}}" rel="stylesheet">
+    <link href="{{url('assets/css/style.css')}}" rel="stylesheet">
     @yield('css')
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:** -->
@@ -41,12 +41,12 @@
             <nav class="navbar top-navbar navbar-expand-md navbar-light">
                 <!-- Logo -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="/home">
                         <!-- Logo icon -->
                         <b><img src="{{url('assets/images/logo.png')}}"alt="homepage" class="dark-logo" /></b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
-                        <b style="color:blue;">MOBSTER</b>
+                        <span><img src="{{url('assets/images/logo-text.png')}}" alt="homepage" class="dark-logo" /></span>
                     </a>
                 </div>
                 <!-- End Logo -->
@@ -87,7 +87,11 @@
                     <ul id="sidebarnav">
                         <li class="nav-devider"></li>
                         <li class="nav-label">Home</li>
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Dashboard</span></a>
+                        <li> <a class="has-arrow  " href="/home" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Dashboard</span></a>
+                        </li>
+                        <li> <a class="has-arrow  " href="/admin/prodi" aria-expanded="false"><i class="fa fa-leanpub"></i><span class="hide-menu">Prodi</span></a>
+                        </li>
+                        <li> <a class="has-arrow  " href="/admin/pendaftar" aria-expanded="false"><i class="fa fa-mortar-board"></i><span class="hide-menu">Data Pendaftar</span></a>
                         </li>
                     </ul>
                 </nav>

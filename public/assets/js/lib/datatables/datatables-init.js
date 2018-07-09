@@ -1,5 +1,6 @@
 $(document).ready(function() {
         $('#myTable').DataTable();
+        ('#prodi').DataTable();
         $(document).ready(function() {
             var table = $('#example').DataTable({
                 "columnDefs": [{
