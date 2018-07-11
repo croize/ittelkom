@@ -60,7 +60,9 @@ class PengajuanController extends Controller
       $as->nama_wali = $request->nama_wali;
       $as->alamat_wali = $request->alamat_wali;
       $as->nomor_wali = $request->nomor_wali;
-      $as->jurusan_id = $request->jurusan_id;
+      $as->jurusan_id = $request->jenjang_id;
+      $as->agama = $request->agama;
+      $as->kode_pos = $request->kode_pos;
       $as->save();
       return redirect('pendaftaran');
     }

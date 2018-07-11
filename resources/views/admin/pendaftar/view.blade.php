@@ -29,10 +29,22 @@
                       <b>:</b> @if($data->jk == "L") Laki-Laki @elseif($data->jk == "P")Perempuan @endif
                     </div>
                     <div class="col-4">
+                      <b>Agama</b>
+                    </div>
+                    <div class="col-8">
+                      <b>:</b> {{$data->agama}}
+                    </div>
+                    <div class="col-4">
                       <b>Alamat Siswa</b>
                     </div>
                     <div class="col-8">
                       <b>:</b> {{$data->alamat}}
+                    </div>
+                    <div class="col-4">
+                      <b>Kode Pos</b>
+                    </div>
+                    <div class="col-8">
+                      <b>:</b> {{$data->kode_pos}}
                     </div>
                     <div class="col-4">
                       <b>Nomor Handphone</b>

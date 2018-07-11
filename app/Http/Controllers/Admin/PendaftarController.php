@@ -12,7 +12,7 @@ class PendaftarController extends Controller
   {
       $this->middleware('auth');
   }
-  
+
     public function index()
     {
       $data = Siswa::all();
@@ -22,5 +22,12 @@ class PendaftarController extends Controller
     {
       $data = Siswa::find($id);
       return view('admin.pendaftar.view',compact('data'));
+    }
+    public function delete($id)
+    {
+      $da = Siswa::find($id);
+      Storage::delete('public/siswa/'.$da->image);
+      $da->delete();
+      return redirect('pendaftar');
     }
 }

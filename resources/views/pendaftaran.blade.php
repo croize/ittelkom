@@ -126,8 +126,23 @@
 												<div class="form-group">
 													<label>Jenis Kelamin <small>(required)</small></label><br>
 													<select class="form-control" name="jk" required>
+														<option value="">-jenis kelamin-</option>
 														<option value="L">Laki-Laki</option>
 														<option value="P">Perempuan</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-sm-10 col-sm-offset-1">
+												<div class="form-group">
+													<label>Agama <small>(required)</small></label><br>
+													<select class="form-control" name="agama" required>
+														<option value="">-agama-</option>
+														<option value="Islam">Islam</option>
+														<option value="Budha">Budha</option>
+														<option value="Hindu">Hindu</option>
+														<option value="Katolik">Katolik</option>
+														<option value="Protestan">Protestan</option>
+														<option value="Konghucu">Konghucu</option>
 													</select>
 												</div>
 											</div>
@@ -147,6 +162,12 @@
 												<div class="form-group">
 													<label>Alamat <small>(required)</small></label>
 													<textarea name="alamat" class="form-control" rows="8" cols="80" required></textarea>
+												</div>
+											</div>
+											<div class="col-sm-10 col-sm-offset-1">
+												<div class="form-group">
+													<label>Kode Pos <small>(required)</small></label>
+													<input name="kode_pos" type="number" class="form-control" placeholder="Kode Pos" required>
 												</div>
 											</div>
 										</div>

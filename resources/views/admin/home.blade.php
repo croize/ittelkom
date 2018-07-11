@@ -9,7 +9,7 @@
                     <span><i class="fa fa-edit" style="font-size:40px;"></i></span>
                 </div>
                 <div class="media-body media-text-right">
-                    <h2 class="color-white">278</h2>
+                    <h2 class="color-white">{{$siswa}}</h2>
                     <p class="m-b-0">Pendaftar</p>
                 </div>
             </div>
@@ -22,7 +22,7 @@
                     <span><i class="fa fa-users" style="font-size:40px;"></i></span>
                 </div>
                 <div class="media-body media-text-right">
-                    <h2 class="color-white">278</h2>
+                    <h2 class="color-white">{{$user}}</h2>
                     <p class="m-b-0">User ITT</p>
                 </div>
             </div>
@@ -32,11 +32,11 @@
         <div class="card bg-success p-20">
             <div class="media widget-ten">
                 <div class="media-left meida media-middle">
-                    <span><i class="fa fa-users" style="font-size:40px;"></i></span>
+                    <span><i class="fa fa-graduation-cap" style="font-size:40px;"></i></span>
                 </div>
                 <div class="media-body media-text-right">
-                    <h2 class="color-white">$27647</h2>
-                    <p class="m-b-0">Admin</p>
+                    <h2 class="color-white">{{$jenjang}}</h2>
+                    <p class="m-b-0">Jenjang</p>
                 </div>
             </div>
         </div>
@@ -48,7 +48,7 @@
                     <span><i class="fa fa-graduation-cap" style="font-size:40px;"></i></span>
                 </div>
                 <div class="media-body media-text-right">
-                    <h2 class="color-white">278</h2>
+                    <h2 class="color-white">{{$prodi}}</h2>
                     <p class="m-b-0">Prodi</p>
                 </div>
             </div>

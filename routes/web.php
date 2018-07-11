@@ -34,6 +34,7 @@ Route::prefix('admin')->group(function () {
 
     Route::get('pendaftar','Admin\PendaftarController@index');
     Route::get('pendaftar/{id}','Admin\PendaftarController@view');
+    Route::get('pendaftar/delete/{id}','Admin\PendaftarController@delete');
 
 });
 
