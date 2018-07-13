@@ -38,24 +38,18 @@
 
 	<body>
 	<!-- End Google Tag Manager (noscript) -->
-	<div class="image-container set-full-height" style="background-image: url('{{url('assetsform/img/paper-1.jpg')}}')">
+	<div class="full-width" style="">
 	    <!--   Creative Tim Branding   -->
-	    <a href="/">
-	         <div class="logo-container">
-	            <div>
-	                <img src="{{url('assetsform/img/new_logo.png')}}">
-	            </div>
-	        </div>
-	    </a>
-
+			<div class="navheader">
+				s
+			</div>
 	    <!--   Big container   -->
 	    <div class="container">
 	        <div class="row">
 		        <div class="col-sm-8 col-sm-offset-2">
 
 		            <!--      Wizard container        -->
-		            <div class="wizard-container">
-
+		            <div class="wizard-container" id="formpage">
 		                <div class="card wizard-card" data-color="red" id="wizardProfile">
 		                    <form action="/pendaftaran" method="post" enctype="multipart/form-data">
 													{{csrf_field()}}
@@ -107,7 +101,7 @@
 												<div class="picture-container">
 													<div class="picture">
 														<img src="{{url('assetsform/img/default-avatar.jpg')}}" class="picture-src" id="wizardPicturePreview" title="" />
-														<input type="file" id="wizard-picture" name="image">
+														<input type="file" id="wizard-picture" name="image" required>
 													</div>
 													<h6>Choose Picture</h6>
 												</div>
@@ -247,7 +241,7 @@
 																				<div class="col-sm-4">
 																						<div class="choice" data-toggle="wizard-radio">
 																								<input type="radio" name="jenjang_id" value="{{$yu->id}}">
-																								<div class="card card-checkboxes card-hover-effect">
+																								<div class="card card-radio card-hover-effect">
 																										<i class="ti-book"></i>
 													<p>{{$yu->jenjang['jenis']}} - {{$yu->nama_prodi}}</p>
 																								</div>
