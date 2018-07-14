@@ -101,7 +101,7 @@
 												<div class="picture-container">
 													<div class="picture">
 														<img src="{{url('assetsform/img/default-avatar.jpg')}}" class="picture-src" id="wizardPicturePreview" title="" />
-														<input type="file" id="wizard-picture" name="image" required>
+														<input type="file" id="wizard-picture" name="image" accept="image/*" required>
 													</div>
 													<h6>Choose Picture</h6>
 												</div>

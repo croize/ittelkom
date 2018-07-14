@@ -39,11 +39,16 @@ class PengajuanController extends Controller
      */
     public function store(Request $request)
     {
+
+      $this->validate($request,[
+        'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+      ]);
+
       $as = new Siswa();
       $as->nama = $request->firstname.' '.$request->lastname;
       if ($request->hasFile('image')) {
 
-        $nameimage = $request->image->getClientOriginalName();
+        $nameimage = time().'.'.request()->image->getClientOriginalExtension();
         $request->image->storeAs('public/siswa',$nameimage);
         $as->image = $nameimage;
       }
